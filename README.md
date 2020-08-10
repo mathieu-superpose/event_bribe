@@ -1,7 +1,8 @@
 # Event Bribe
 _l'app pour ne participer qu'à des activités payantes_
 
-<!-- ![](app/assets/images/event_bribe.png?raw=true) -->
+![](app/assets/images/event_bribe.png?raw=true)
+
 
 ## Application
 
@@ -16,7 +17,7 @@ Réseau social de réservation d'activités payantes, créée dans le cadre de T
   ```
 - Base de donnée:
 
-<!-- ![](app/assets/images/bdd.png?raw=true) -->
+![](app/assets/images/bdd.png?raw=true)
   
   Le système de gestion de base de données est postgresSQL.
 

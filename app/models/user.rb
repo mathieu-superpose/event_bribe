@@ -1,12 +1,16 @@
 class User < ApplicationRecord
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
 	after_create :welcome_send
 
   
 	has_many :attendances
 	has_many :events, foreign_key: 'organizer_id', class_name: "Event"
 	
-	validates :first_name, presence: {message: "prénom obligatoire"}
-	validates :last_name, presence: {message: "nom de famille obligatoire"}
+	#validates :first_name, presence: {message: "prénom obligatoire"}
+	#validates :last_name, presence: {message: "nom de famille obligatoire"}
 	#validates :email,
     #presence: {message: "email obligatoire"},
     #uniqueness: {message: "email déjà utilisé"},

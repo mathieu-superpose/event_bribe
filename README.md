@@ -36,7 +36,9 @@ Réseau de mise en relation et de réservation d'activités payantes, créé dan
   rails db:create #ou rails db:create:all #ou rake db:create:all
   rails db:migrate
   ```
+## Heroku:
 
+https://eventbribe.herokuapp.com/
 
 ## Créateur
 

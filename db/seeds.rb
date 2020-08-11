@@ -20,7 +20,7 @@ end
 	event_list = Event.create!(
 		start_date: Time.at(Time.now.to_f + rand(1..365)*60*60*24),
 		duration: rand(1..12)*5*rand(1..10),#durée de 5min à 10heures
-		title: Faker::Company.buzzword,
+		title: "The " + Faker::Company.buzzword, # garantir + de 6 caractères
 		description: Faker::Company.industry + ": " + Faker::Company.catch_phrase,
 		price: rand(1..1000),
 		location: Faker::Address.city,

@@ -1,4 +1,7 @@
 class User < ApplicationRecord
+	after_create :welcome_send
+
+  
 	has_many :attendances
 	has_many :events, foreign_key: 'organizer_id', class_name: "Event"
 	
@@ -9,4 +12,7 @@ class User < ApplicationRecord
     #uniqueness: {message: "email déjà utilisé"},
     #format: { with: /\A[^@\s]+@([^@\s]+\.)+[^@\s]+\z/, message: "rentrez votre adresse email complète" }
     
+    def welcome_send
+    	UserMailer.welcome_email(self).deliver_now
+  	end
 end

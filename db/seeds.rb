@@ -4,7 +4,7 @@ Attendance.destroy_all
 User.destroy_all
 Event.destroy_all
 
-10.times do 
+5.times do 
 first_name = Faker::Name.first_name
 last_name = Faker::Name.last_name
 
@@ -28,7 +28,7 @@ end
 		)
 end
 
-15.times do
+10.times do
   Attendance.create(
     attendant_id: User.all.ids.sample,
     event_id: Event.all.ids.sample)

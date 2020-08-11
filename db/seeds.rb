@@ -12,7 +12,8 @@ last_name = Faker::Name.last_name
   	first_name: first_name,
   	last_name: last_name, 
   	email: first_name.split(' ').join.downcase.delete('.') + "." + last_name.split(' ').join.downcase.delete('.') + "@yopmail.com",
-  	description: Faker::Quote.most_interesting_man_in_the_world
+  	description: Faker::Quote.most_interesting_man_in_the_world,
+  	password: "foobar"
   	)
 end
 

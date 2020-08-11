@@ -11,7 +11,7 @@ _l'app pour ne participer qu'à des activités payantes_
 
 ## Application
 
-Réseau social de réservation d'activités payantes, créé dans le cadre de The Hacking Project
+Réseau de mise en relation et de réservation d'activités payantes, créé dans le cadre de The Hacking Project s13.
 
 ## Installation
 

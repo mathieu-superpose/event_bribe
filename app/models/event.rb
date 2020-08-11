@@ -1,5 +1,10 @@
 class Event < ApplicationRecord
-	validates :start_date,
+	
+    belongs_to :organizer, foreign_key:'organizer_id', class_name: 'User'
+    has_many :attendances
+    has_many :participants, through: :attendances, class_name: 'User'
+
+    validates :start_date,
       presence: {message: "date obligatoire"}
     validates :duration,
       presence: {message: "durée obligatoire"}

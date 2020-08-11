@@ -1,6 +1,7 @@
 class User < ApplicationRecord
 	has_many :attendances
-	has_many :events
+	has_many :events, foreign_key: 'organizer_id', class_name: "Event"
+	
 	validates :first_name, presence: {message: "prénom obligatoire"}
 	validates :last_name, presence: {message: "nom de famille obligatoire"}
 	#validates :email,

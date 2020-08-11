@@ -3,7 +3,7 @@ _l'app pour ne participer qu'à des activités payantes_
 
 
 <p align="center">
-  <img width="460" height="300" src="app/assets/images/eventbribe.png?raw=true">
+  <img src="app/assets/images/eventbribe.png?raw=true">
 </p>
 
 
@@ -24,7 +24,7 @@ Réseau social de réservation d'activités payantes, créé dans le cadre de Th
 ## Base de donnée:
 
 <p align="center">
-  <img width="460" height="300" src="app/assets/images/bdd.png?raw=true">
+  <img src="app/assets/images/bdd.png?raw=true">
 </p>
 
   

@@ -1,4 +1,4 @@
-# Event Bribe
+# Eventbribe
 _l'app pour ne participer qu'à des activités payantes_
 
 

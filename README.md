@@ -1,7 +1,12 @@
 # Event Bribe
 _l'app pour ne participer qu'à des activités payantes_
 
-![](app/assets/images/event_bribe.png?raw=true)
+
+<p align="center">
+  <img width="460" height="300" src="![](app/assets/images/eventbribe.png?raw=true)">
+</p>
+
+
 
 
 ## Application
@@ -15,9 +20,13 @@ Réseau social de réservation d'activités payantes, créé dans le cadre de Th
   bundle install
   bundle update
   ```
-- Base de donnée:
 
-![](app/assets/images/bdd.png?raw=true)
+## Base de donnée:
+
+<p align="center">
+  <img width="460" height="300" src="![](app/assets/images/bdd.png?raw=true)">
+</p>
+
   
   Le système de gestion de base de données est postgresSQL.
 

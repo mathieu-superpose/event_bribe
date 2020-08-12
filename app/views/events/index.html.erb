@@ -36,7 +36,7 @@
 
 <%= link_to 'New Event', new_event_path %> -->
 
-<div class="jumbotron" style="background-image: url(https://images.pexels.com/photos/3781895/pexels-photo-3781895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); background-size: 80%; background-repeat: no-repeat; background-position: center;">
+<div class="jumbotron" style="background-image: url(https://images.pexels.com/photos/3781895/pexels-photo-3781895.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); background-size: 100%; background-repeat: no-repeat; background-position: center;">
         <div class="container">
           <h1 class="display-3"><strong>Le futur est dans l'enveloppe</strong></h1>
           <p>Prenez votre part du gateau!<br>Vous aussi faites du bénef sans trop d'effort.</p>
@@ -47,7 +47,7 @@
 
       <div class="container">
 
-        <hr>
+        
 
         <% Event.all.each do |event| %>
         <div class="col-md-4">
@@ -74,8 +74,9 @@
       </div> <!-- /container -->
 
     </main>
+    <hr>
 
-    <footer class="container">
+    <footer class="container text-center small">
       <p>&copy; Eventbribe 2020 - THP s.13</p>
     </footer>
 

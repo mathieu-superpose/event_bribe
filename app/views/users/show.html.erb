@@ -1,29 +1,46 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>First name:</strong>
-  <%= @user.first_name %>
+<p id="notice">
+    <%= notice %>
 </p>
-
 <p>
-  <strong>Last name:</strong>
-  <%= @user.last_name %>
+    <strong>First name:</strong>
+    <%= @user.first_name %>
 </p>
-
 <p>
-  <strong>Description:</strong>
-  <%= @user.description %>
+    <strong>Last name:</strong>
+    <%= @user.last_name %>
 </p>
-
 <p>
-  <strong>Email:</strong>
-  <%= @user.email %>
+    <strong>Description:</strong>
+    <%= @user.description %>
 </p>
-
+<p>
+    <strong>Email:</strong>
+    <%= @user.email %>
+</p>
 <!-- <p>
   <strong>Encrypted password:</strong>
   <%= @user.encrypted_password %>
 </p> -->
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+<div class="container">
+    <h5 class="mb-4"><u> Mes événements </u></h5>
+    <div class="row">
+        <% Event.where(organizer: current_user).each do |i| %>
+        <div class="col-md-4">
+            <div style="height: 80px">
+                <h2>
+                    <%=i.title%>
+                </h2>
+            </div>
+            <div style="height: 80px">
+                <p> Ma description :<b>
+                        <%=i.description%></b></p>
+            </div>
+            <p> Aura lieu le :<b>
+                    <%=i.start_date%></b> </p>
+            <p><a class="btn btn-secondary" href=<%=event_path(i.id)%> role="button">Voir l'événement</a></p>
+        </div>
+        <%end%>
+    </div>
+</div>
